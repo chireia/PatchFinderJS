@@ -152,7 +152,7 @@ const desenharNaLista = function desenharNaLista () {
   document.body.appendChild(darwin[0].casas.reduce((a, b) => {
     const li = b.reduce((c, d) => {
       const img = document.createElement('img')
-      img.setAttribute('src', d.nome + '.jpg')
+      img.setAttribute('src', 'img/'+ d.nome + '.jpg')
       img.setAttribute('title', d.nome)
       c.appendChild(img)
       return c
